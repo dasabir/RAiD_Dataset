@@ -4,6 +4,7 @@ RAiD_Dataset
 Re-Identification Across Indoor-Outdoor Dataset (RAiD) - Introduced in the work "Consistent Re-identification in a Camera Network" (ECCV 2014)
 
 The dataset was collected at the Winstun Chung Hall of UC Riverside. It is a 4 camera dataset with 2 indoor and 2 outdoor cameras. The cameras are numbered as 1,2,3 and 4 where cameras 1 and 2 are indoor while cameras 3 and 4 are outdoor. 43 people walked in these camera views resulting in 6920 images. Among the 43 persons 41 people appeared in all the 4 cmareas where as person 8 is not present in camera 3 and person 34 is not present in camera 4.
+
 A fully annotated mat file is provided in this dataset which contains a structure named 'dataset'. The important fields of the struct are described in detail below.
 dataset.images - A 4-D matrix of size 128x64x3x6920 which contains the detections (RGB values in the 3 channels) resized to 128x64.
 dataset.masks - A 3-D binary matrix of size 128x64x6920 which contains the foreground masks of the above detections.
